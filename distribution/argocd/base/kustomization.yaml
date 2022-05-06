@@ -9,7 +9,7 @@ resources:
 patchesStrategicMerge:
 - patches/configmap-patch.yaml
 - patches/add-custom-kustomize.yaml
-# - patches/configmap-helm-patch.yaml
+
 
 patchesJson6902:
 - target:
