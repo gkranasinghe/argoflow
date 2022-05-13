@@ -16,9 +16,9 @@ spec:
       - name: grafana.admin.existingSecret
         value: grafana-admin-secret
       - name: grafana.adminUser
-        value: ""
+        value: "gk"
       - name: grafana.adminPassword
-        value: ""
+        value: "abcd"
       # - name : grafana.ingress.enabled
       #   value : "true"
       # - name: grafana.ingress.hosts[0]
