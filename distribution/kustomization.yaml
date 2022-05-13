@@ -52,7 +52,7 @@ resources:
 ## System
 # - argocd-applications/external-dns.yaml
 # - argocd-applications/cloudflare-secrets.yaml
-# - argocd-applications/sealed-secrets.yaml
+- argocd-applications/sealed-secrets.yaml
 
 ## Monitoring and logging
 # - argocd-applications/monitoring-resources.yaml
