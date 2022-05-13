@@ -30,7 +30,7 @@ spec:
       - name: grafana.persistence.enabled
         value: "true"
       - name: grafana.persistence.storageClassName
-        value: rook-ceph-block
+        value: nfs-client
       - name: grafana.persistence.accessModes[0]
         value: ReadWriteOnce
       - name:  grafana.persistence.size
