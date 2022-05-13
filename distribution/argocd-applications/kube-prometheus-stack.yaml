@@ -64,7 +64,7 @@ spec:
       # - name: grafana.grafana\.ini.auth\.proxy.header_property
       #   value: email
       - name: prometheus.prometheusSpec.storageSpec.volumeClaimTemplate.spec.storageClassName
-        value: rook-ceph-block
+        value: nfs-client
       - name: prometheus.prometheusSpec.storageSpec.volumeClaimTemplate.spec.accessModes[0]
         value: ReadWriteOnce
       - name: prometheus.prometheusSpec.storageSpec.volumeClaimTemplate.spec.resources.requests.storage
