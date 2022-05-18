@@ -13,7 +13,7 @@ spec:
           ip: "10.100.214.19"
           hostname: "auth.my-cluster.gkranasinghe.com"
       parameters:
-      - name: extraArgs.ssl_insecure_skip_verify
+      - name: extraArgs.ssl-insecure-skip-verify
         value: "true"
       - name: image.repository
         value: quay.io/oauth2-proxy/oauth2-proxy
