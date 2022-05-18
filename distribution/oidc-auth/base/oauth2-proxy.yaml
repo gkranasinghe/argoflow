@@ -8,6 +8,12 @@ spec:
   source:
     chart: oauth2-proxy
     helm:
+      values: |
+        hostAlias:
+          enabled: true
+          ip: "10.100.214.19"
+          hostname: "auth.my-cluster.gkranasinghe.com"
+
       parameters:
       - name: image.repository
         value: quay.io/oauth2-proxy/oauth2-proxy
