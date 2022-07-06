@@ -4,8 +4,22 @@ kind: Kustomization
 resources:
 - https://github.com/kubeflow/kfserving/releases/download/v0.6.0/kfserving.yaml
 
-patchesStrategicMerge:
-- patches/inferenceservice-config.yaml
+# patchesStrategicMerge:
+# - patches/inferenceservice-config.yaml
+
+patchesJson6902:
+- target:
+    version: v1
+    kind: ConfigMap
+    name: inferenceservice-config
+    namespace: kubeflow
+  path: patches/inferenceservice-config.yaml
+- target:
+    version: v1
+    kind: ConfigMap
+    name: kfserving-config
+    namespace: kfserving-system
+  path: patches/kfserving-config.yaml
 
 images:
 - name: gcr.io/kfserving/kfserving-controller
